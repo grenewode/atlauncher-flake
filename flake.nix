@@ -13,5 +13,10 @@
     }; in
     {
       packages.default = pkgs.atlauncher;
+
+      apps.default = {
+        type = "app";
+        program = "${pkgs.atlauncher}/bin/atlauncher";
+      };
     }));
 }
